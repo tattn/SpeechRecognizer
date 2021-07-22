@@ -44,7 +44,7 @@ final class SpeechRecognizer {
         let recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         self.recognitionRequest = recognitionRequest
         
-        recognitionRequest.shouldReportPartialResults = true
+        recognitionRequest.shouldReportPartialResults = false
         recognitionRequest.requiresOnDeviceRecognition = true
 
         speechRecognizer.queue = OperationQueue()
